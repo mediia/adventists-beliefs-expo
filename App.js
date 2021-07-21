@@ -2,6 +2,7 @@ import React from 'react'
 import { StatusBar, StyleSheet, Text, View } from 'react-native'
 import { useQuery, ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 import 'react-native-gesture-handler';
 import { Provider as PaperProvider } from 'react-native-paper'
 
@@ -13,6 +14,9 @@ const client = new ApolloClient({
   cache: new InMemoryCache()
 });
 
+// Initialize main Stack Navigator
+const Stack = createStackNavigator()
+
 function Home () {
 
   const { loading, error, data } = useQuery(queries.HOME);
@@ -20,7 +24,6 @@ function Home () {
   return (
 
     <View style={styles.container}>
-      <Text style={styles.title}>Adventist beliefs</Text>
 
       {loading && <Text>Loading...</Text>}
       {error && <Text>Error! ${error.message}</Text>}
