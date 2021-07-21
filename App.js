@@ -1,6 +1,8 @@
 import React from 'react'
 import { StatusBar, StyleSheet, Text, View } from 'react-native'
 import { useQuery, ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+import { NavigationContainer } from '@react-navigation/native';
+import 'react-native-gesture-handler';
 
 import queries from './src/data/queries'
 
@@ -43,7 +45,17 @@ export default function App () {
 
   return (
     <ApolloProvider client={client}>
-      <Home/>
+      <NavigationContainer>
+        <Stack.Navigator initialRouteName="Home">
+          <Stack.Screen name="Adventists Beliefs"
+            component={Home}
+          />
+          {/* <Stack.Screen name="Details"
+            component={DetailsScreen}
+            options={({ route }) => ({ title: route.params.belief.es })}
+          /> */}
+        </Stack.Navigator>
+      </NavigationContainer>
     </ApolloProvider>
   )
 }
