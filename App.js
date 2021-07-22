@@ -1,9 +1,9 @@
 import React from 'react'
 import { StatusBar, StyleSheet, Text, View } from 'react-native'
-import { useQuery, ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import 'react-native-gesture-handler';
+import { useQuery, ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client'
+import { NavigationContainer } from '@react-navigation/native'
+import { createStackNavigator } from '@react-navigation/stack'
+import 'react-native-gesture-handler'
 import { Provider as PaperProvider } from 'react-native-paper'
 
 import queries from './src/data/queries'
@@ -12,14 +12,14 @@ import queries from './src/data/queries'
 const client = new ApolloClient({
   uri: 'https://mediia-adventist-beliefs.glitch.me/',
   cache: new InMemoryCache()
-});
+})
 
 // Initialize main Stack Navigator
 const Stack = createStackNavigator()
 
-function Home () {
+function Home() {
 
-  const { loading, error, data } = useQuery(queries.HOME);
+  const { loading, error, data } = useQuery(queries.HOME)
 
   return (
 
@@ -45,7 +45,7 @@ function Home () {
   )
 }
 
-export default function App () {
+export default function App() {
 
   return (
     <PaperProvider>
@@ -83,4 +83,4 @@ const styles = StyleSheet.create({
   doctrineTitle: {
     fontWeight: 'bold',
   },
-});
+})
