@@ -1,13 +1,15 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
+import DoctrineTitle from './DoctrineTitle'
 import Belief from './Belief'
 
 export default function Doctrine({doctrine}) {
 
   return (
     <View key={doctrine._id} style={styles.doctrineContainer}>
-      <Text style={styles.doctrineTitle}>{doctrine.title}</Text>
+
+      <DoctrineTitle doctrine={doctrine}/>
 
       {doctrine.beliefs && doctrine.beliefs.map(belief => (
 
@@ -24,8 +26,5 @@ export default function Doctrine({doctrine}) {
 const styles = StyleSheet.create({
   doctrineContainer: {
     marginBottom: 10,
-  },
-  doctrineTitle: {
-    fontWeight: 'bold',
   },
 })
