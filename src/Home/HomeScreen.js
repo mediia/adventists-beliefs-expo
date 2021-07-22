@@ -23,7 +23,7 @@ export default function Home() {
           key={doctrine._id}
           doctrine={doctrine}
         />
-        
+
       ))}
 
       <StatusBar style="auto" />

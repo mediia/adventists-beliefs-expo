@@ -1,4 +1,4 @@
-import { gql } from '@apollo/client';
+import { gql } from '@apollo/client'
 
 const HOME = gql`
   query {
@@ -35,6 +35,6 @@ const BELIEF = gql`
 `
 
 export default {
-    HOME,
-    BELIEF
+  HOME,
+  BELIEF
 }

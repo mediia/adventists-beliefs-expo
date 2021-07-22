@@ -4,12 +4,12 @@ import { StyleSheet, Text, View } from 'react-native'
 import DoctrineTitle from './DoctrineTitle'
 import Belief from './Belief'
 
-export default function Doctrine({doctrine}) {
+export default function Doctrine({ doctrine }) {
 
   return (
     <View key={doctrine._id} style={styles.doctrineContainer}>
 
-      <DoctrineTitle doctrine={doctrine}/>
+      <DoctrineTitle doctrine={doctrine} />
 
       {doctrine.beliefs && doctrine.beliefs.map(belief => (
 
@@ -19,6 +19,7 @@ export default function Doctrine({doctrine}) {
         />
 
       ))}
+
     </View>
   )
 }
