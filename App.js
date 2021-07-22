@@ -1,12 +1,11 @@
 import React from 'react'
-import { StatusBar, StyleSheet, Text, View } from 'react-native'
-import { useQuery, ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client'
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import 'react-native-gesture-handler'
 import { Provider as PaperProvider } from 'react-native-paper'
 
-import queries from './src/data/queries'
+import HomeScreen from './src/Home/HomeScreen'
 
 // Initialize Apollo Client
 const client = new ApolloClient({
@@ -17,34 +16,6 @@ const client = new ApolloClient({
 // Initialize main Stack Navigator
 const Stack = createStackNavigator()
 
-function Home() {
-
-  const { loading, error, data } = useQuery(queries.HOME)
-
-  return (
-
-    <View style={styles.container}>
-
-      {loading && <Text>Loading...</Text>}
-      {error && <Text>Error! ${error.message}</Text>}
-
-      {!loading && data.doctrines.map(doctrine => (
-        <View key={doctrine._id} style={styles.doctrineContainer}>
-          <Text style={styles.doctrineTitle}>{doctrine.title}</Text>
-
-          {doctrine.beliefs && doctrine.beliefs.map(belief => (
-
-            <Text key={belief._id}>- {belief.title}</Text>
-
-          ))}
-        </View>
-      ))}
-
-      <StatusBar style="auto" />
-    </View>
-  )
-}
-
 export default function App() {
 
   return (
@@ -53,7 +24,7 @@ export default function App() {
         <NavigationContainer>
           <Stack.Navigator initialRouteName="Home">
             <Stack.Screen name="Adventists Beliefs"
-              component={Home}
+              component={HomeScreen}
             />
             {/* <Stack.Screen name="Details"
               component={DetailsScreen}
@@ -65,22 +36,3 @@ export default function App() {
     </PaperProvider>
   )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    marginBottom: 10,
-    fontSize: 30,
-  },
-  doctrineContainer: {
-    marginBottom: 10,
-  },
-  doctrineTitle: {
-    fontWeight: 'bold',
-  },
-})
