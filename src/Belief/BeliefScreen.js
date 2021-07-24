@@ -2,6 +2,7 @@ import React from 'react';
 import { ScrollView, Text, View, StyleSheet } from 'react-native';
 
 import useData from '../data/useData'
+import RootSurface from '../shared/RootSurface'
 
 import BeliefImage from './BeliefImage'
 import Declaration from './Declaration'

@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, View } from 'react-native'
+import { StatusBar, StyleSheet, View } from 'react-native'
 import { useTheme } from 'react-native-paper'
 
 export default function RootSurface({ children }) {
