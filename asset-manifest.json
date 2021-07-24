@@ -1,23 +1,23 @@
 {
   "files": {
-    "app.js": "/static/js/app.549ac4b2.chunk.js",
-    "app.js.map": "/static/js/app.549ac4b2.chunk.js.map",
-    "runtime~app.js": "/static/js/runtime~app.2e9f1821.js",
-    "runtime~app.js.map": "/static/js/runtime~app.2e9f1821.js.map",
-    "static/js/2.fc041036.chunk.js": "/static/js/2.fc041036.chunk.js",
-    "static/js/2.fc041036.chunk.js.map": "/static/js/2.fc041036.chunk.js.map",
-    "fonts/MaterialCommunityIcons.ttf": "/./fonts/MaterialCommunityIcons.ttf",
-    "favicon-16.png": "/favicon-16.png",
-    "favicon-32.png": "/favicon-32.png",
-    "favicon.ico": "/favicon.ico",
-    "index.html": "/index.html",
-    "manifest.json": "/manifest.json",
-    "serve.json": "/serve.json",
-    "static/js/2.fc041036.chunk.js.LICENSE.txt": "/static/js/2.fc041036.chunk.js.LICENSE.txt"
+    "app.js": "/adventists-beliefs-expo/static/js/app.549ac4b2.chunk.js",
+    "app.js.map": "/adventists-beliefs-expo/static/js/app.549ac4b2.chunk.js.map",
+    "runtime~app.js": "/adventists-beliefs-expo/static/js/runtime~app.d414591d.js",
+    "runtime~app.js.map": "/adventists-beliefs-expo/static/js/runtime~app.d414591d.js.map",
+    "static/js/2.fa6ef556.chunk.js": "/adventists-beliefs-expo/static/js/2.fa6ef556.chunk.js",
+    "static/js/2.fa6ef556.chunk.js.map": "/adventists-beliefs-expo/static/js/2.fa6ef556.chunk.js.map",
+    "fonts/MaterialCommunityIcons.ttf": "/adventists-beliefs-expo/./fonts/MaterialCommunityIcons.ttf",
+    "favicon-16.png": "/adventists-beliefs-expo/favicon-16.png",
+    "favicon-32.png": "/adventists-beliefs-expo/favicon-32.png",
+    "favicon.ico": "/adventists-beliefs-expo/favicon.ico",
+    "index.html": "/adventists-beliefs-expo/index.html",
+    "manifest.json": "/adventists-beliefs-expo/manifest.json",
+    "serve.json": "/adventists-beliefs-expo/serve.json",
+    "static/js/2.fa6ef556.chunk.js.LICENSE.txt": "/adventists-beliefs-expo/static/js/2.fa6ef556.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime~app.2e9f1821.js",
-    "static/js/2.fc041036.chunk.js",
+    "static/js/runtime~app.d414591d.js",
+    "static/js/2.fa6ef556.chunk.js",
     "static/js/app.549ac4b2.chunk.js"
   ]
 }
