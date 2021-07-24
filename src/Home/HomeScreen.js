@@ -1,5 +1,5 @@
 import React from 'react'
-import { StatusBar, StyleSheet, Text, View } from 'react-native'
+import { ScrollView, StatusBar, StyleSheet, Text, View } from 'react-native'
 import { Surface } from 'react-native-paper'
 
 import useData from '../data/useData'
@@ -13,19 +13,21 @@ export default function Home() {
   return (
 
     <Surface style={styles.container}>
+      <ScrollView>
 
-      {loading && <Text>Loading...</Text>}
-      {error && <Text>Error! ${error.message}</Text>}
+        {loading && <Text>Loading...</Text>}
+        {error && <Text>Error! ${error.message}</Text>}
 
-      {!loading && data.doctrines.map(doctrine => (
+        {!loading && data.doctrines.map(doctrine => (
 
-        <Doctrine
-          key={doctrine._id}
-          doctrine={doctrine}
-        />
+          <Doctrine
+            key={doctrine._id}
+            doctrine={doctrine}
+          />
 
-      ))}
+        ))}
 
+      </ScrollView>
       <StatusBar style="auto" />
     </Surface>
   )
@@ -34,7 +36,5 @@ export default function Home() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 })
