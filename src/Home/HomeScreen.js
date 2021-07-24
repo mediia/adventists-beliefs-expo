@@ -1,14 +1,13 @@
 import React from 'react'
 import { StatusBar, StyleSheet, Text, View } from 'react-native'
-import { useQuery } from '@apollo/client'
 
-import queries from '../data/queries'
+import useData from '../data/useData'
 
 import Doctrine from './Doctrine'
 
 export default function Home() {
 
-  const { loading, error, data } = useQuery(queries.HOME);
+  const { loading, error, data } = useData('HOME');
 
   return (
 
