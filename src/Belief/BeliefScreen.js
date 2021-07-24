@@ -1,20 +1,19 @@
 import React from 'react';
-import { ScrollView, StatusBar, Text, View, StyleSheet } from 'react-native';
-import { Surface } from 'react-native-paper'
+import { ScrollView, Text, View, StyleSheet } from 'react-native';
 
 import useData from '../data/useData'
 
 import BeliefImage from './BeliefImage'
 import Declaration from './Declaration'
 
-export default function BeliefScreen({ route }) {
+export default function BeliefScreen({ theme, route }) {
 
   const { belief } = route.params
 
   const { loading, error, data } = useData('BELIEF', { _id: belief._id })
 
   return (
-    <Surface style={styles.container}>
+    <RootSurface>
       <ScrollView>
 
         {loading && <Text>Loading...</Text>}
@@ -40,15 +39,11 @@ export default function BeliefScreen({ route }) {
           </View>
         )}
       </ScrollView>
-      <StatusBar style="auto" />
-    </Surface>
+    </RootSurface>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
   declarationsContainer: {
     padding: 8,
   }

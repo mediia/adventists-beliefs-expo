@@ -1,8 +1,8 @@
 import React from 'react'
-import { ScrollView, StatusBar, StyleSheet, Text } from 'react-native'
-import { Surface } from 'react-native-paper'
+import { ScrollView, Text } from 'react-native'
 
 import useData from '../data/useData'
+import RootSurface from '../shared/RootSurface'
 
 import Doctrine from './Doctrine'
 
@@ -11,8 +11,7 @@ export default function Home() {
   const { loading, error, data } = useData('HOME')
 
   return (
-
-    <Surface style={styles.container}>
+    <RootSurface>
       <ScrollView>
 
         {loading && <Text>Loading...</Text>}
@@ -28,13 +27,6 @@ export default function Home() {
         ))}
 
       </ScrollView>
-      <StatusBar style="auto" />
-    </Surface>
+    </RootSurface>
   )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-})
