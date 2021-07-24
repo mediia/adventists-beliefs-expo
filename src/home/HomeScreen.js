@@ -1,20 +1,24 @@
 import React from 'react'
-import { ScrollView, Text } from 'react-native'
+import { Dimensions, ScrollView, StyleSheet, Text } from 'react-native'
 
 import useData from '../data/useData'
 import RootSurface from '../shared/RootSurface'
 
 import Doctrine from './Doctrine'
+import HomeScreenLoading from './HomeScreenLoading'
+
+const width = Dimensions.get('window').width
 
 export default function Home() {
 
   const { loading, error, data } = useData('HOME')
 
+  if (loading) return <HomeScreenLoading/>
+
   return (
     <RootSurface>
-      <ScrollView>
+      <ScrollView style={styles.container}>
 
-        {loading && <Text>Loading...</Text>}
         {error && <Text>Error! ${error.message}</Text>}
 
         {!loading && !error && data.doctrines.map(doctrine => (
@@ -30,3 +34,9 @@ export default function Home() {
     </RootSurface>
   )
 }
+
+const styles = StyleSheet.create({
+  container: {
+    width
+  }
+})

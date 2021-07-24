@@ -17,5 +17,7 @@ export default function RootSurface({ children }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 })

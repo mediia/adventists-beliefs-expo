@@ -2,16 +2,16 @@ import React from 'react'
 import { StyleSheet } from 'react-native'
 import { Card, Paragraph } from 'react-native-paper'
 
-export default function Declaration({declaration}) {
+import LoadingPulse from '../shared/LoadingPulse'
+
+export default function DeclarationLoading() {
 
   return (
-    <Card
-      key={declaration._id}
-      style={styles.declaration}
-    >
+    <Card style={styles.declaration}>
       <Card.Content>
         <Paragraph>
-          {declaration.text}
+          <LoadingPulse/>
+          <LoadingPulse/>
         </Paragraph>
       </Card.Content>
     </Card>

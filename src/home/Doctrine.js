@@ -7,6 +7,7 @@ export default function Doctrine({ doctrine }) {
 
   return (
     <List.Section>
+      
       <List.Subheader>{doctrine.title.toUpperCase()}</List.Subheader>
 
       {doctrine.beliefs && doctrine.beliefs.map(belief => (

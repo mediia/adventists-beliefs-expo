@@ -4,6 +4,7 @@ import { ScrollView, Text, View, StyleSheet } from 'react-native';
 import useData from '../data/useData'
 import RootSurface from '../shared/RootSurface'
 
+import BeliefScreenLoading from './BeliefScreenLoading'
 import BeliefImage from './BeliefImage'
 import Declaration from './Declaration'
 
@@ -13,11 +14,12 @@ export default function BeliefScreen({ theme, route }) {
 
   const { loading, error, data } = useData('BELIEF', { _id: belief._id })
 
+  if (loading) return <BeliefScreenLoading/>
+
   return (
     <RootSurface>
       <ScrollView>
 
-        {loading && <Text>Loading...</Text>}
         {error && <Text>Error! ${error.message}</Text>}
 
         {!loading && !error && data.belief && (
