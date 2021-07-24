@@ -15,7 +15,7 @@ export default function BeliefImage({belief}) {
 const styles = StyleSheet.create({
   image: {
     height: 29,
-    width: 55,
+    width: 29 * 15 / 8,
     borderRadius: 2,
   },
 })
