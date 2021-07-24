@@ -1,15 +1,13 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { List } from 'react-native-paper'
 
-import DoctrineTitle from './DoctrineTitle'
 import Belief from './Belief'
 
 export default function Doctrine({ doctrine }) {
 
   return (
-    <View key={doctrine._id} style={styles.doctrineContainer}>
-
-      <DoctrineTitle doctrine={doctrine} />
+    <List.Section>
+      <List.Subheader>{doctrine.title.toUpperCase()}</List.Subheader>
 
       {doctrine.beliefs && doctrine.beliefs.map(belief => (
 
@@ -20,12 +18,6 @@ export default function Doctrine({ doctrine }) {
 
       ))}
 
-    </View>
+    </List.Section>
   )
 }
-
-const styles = StyleSheet.create({
-  doctrineContainer: {
-    marginBottom: 10,
-  },
-})

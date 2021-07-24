@@ -3,8 +3,9 @@ import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import 'react-native-gesture-handler'
-import { Provider as PaperProvider } from 'react-native-paper'
+import { DarkTheme, Provider as PaperProvider } from 'react-native-paper'
 
+import NavigationBar from './src/NavigationBar'
 import HomeScreen from './src/Home/HomeScreen'
 
 // Initialize Apollo Client
@@ -19,12 +20,18 @@ const Stack = createStackNavigator()
 export default function App() {
 
   return (
-    <PaperProvider>
+    <PaperProvider theme={DarkTheme}>
       <ApolloProvider client={client}>
         <NavigationContainer>
-          <Stack.Navigator initialRouteName="Home">
-            <Stack.Screen name="Adventists Beliefs"
+          <Stack.Navigator
+            initialRouteName="Home"
+            screenOptions={{
+              header: (props) => <NavigationBar {...props} />
+            }}
+          >
+            <Stack.Screen name="Home"
               component={HomeScreen}
+              options={{ title: 'Adventist Beliefs' }}
             />
             {/* <Stack.Screen name="Details"
               component={DetailsScreen}

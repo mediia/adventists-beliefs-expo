@@ -1,17 +1,18 @@
 import React from 'react'
 import { StatusBar, StyleSheet, Text, View } from 'react-native'
+import { Surface, Button } from 'react-native-paper'
 
 import useData from '../data/useData'
 
 import Doctrine from './Doctrine'
 
-export default function Home() {
+export default function Home({navigation}) {
 
   const { loading, error, data } = useData('HOME');
 
   return (
 
-    <View style={styles.container}>
+    <Surface style={styles.container}>
 
       {loading && <Text>Loading...</Text>}
       {error && <Text>Error! ${error.message}</Text>}
@@ -26,25 +27,14 @@ export default function Home() {
       ))}
 
       <StatusBar style="auto" />
-    </View>
+    </Surface>
   )
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  title: {
-    marginBottom: 10,
-    fontSize: 30,
-  },
-  doctrineContainer: {
-    marginBottom: 10,
-  },
-  doctrineTitle: {
-    fontWeight: 'bold',
   },
 })
