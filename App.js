@@ -6,8 +6,8 @@ import 'react-native-gesture-handler'
 import { Provider as PaperProvider } from 'react-native-paper'
 
 import NavigationBar from './src/shared/NavigationBar'
-import HomeScreen from './src/Home/HomeScreen'
-import BeliefScreen from './src/Belief/BeliefScreen'
+import HomeScreen from './src/home/HomeScreen'
+import BeliefScreen from './src/belief/BeliefScreen'
 
 // Initialize Apollo Client
 const client = new ApolloClient({
