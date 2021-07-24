@@ -10,6 +10,7 @@ const HOME = gql`
         _id
         order
         title
+        image
       }
     }
   }
@@ -21,6 +22,7 @@ const BELIEF = gql`
       _id
       order
       title
+      image
       declarations {
         _id
         order
