@@ -1,9 +1,7 @@
 import React from 'react'
 import { Appbar } from 'react-native-paper'
 
-export default function NavigationBar(props) {
-  console.log(props)
-  const { navigation, previous, scene } = props
+export default function NavigationBar({ navigation, previous, scene }) {
 
   return (
     <Appbar.Header>
