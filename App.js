@@ -7,6 +7,7 @@ import { Provider as PaperProvider } from 'react-native-paper'
 
 import NavigationBar from './src/NavigationBar'
 import HomeScreen from './src/Home/HomeScreen'
+import BeliefScreen from './src/Belief/BeliefScreen'
 
 // Initialize Apollo Client
 const client = new ApolloClient({
@@ -33,10 +34,10 @@ export default function App() {
               component={HomeScreen}
               options={{ title: 'Adventist Beliefs' }}
             />
-            {/* <Stack.Screen name="Details"
-              component={DetailsScreen}
-              options={({ route }) => ({ title: route.params.belief.es })}
-            /> */}
+            <Stack.Screen name="Belief"
+              component={BeliefScreen}
+              options={({ route }) => ({ title: route.params.belief.title })}
+            />
           </Stack.Navigator>
         </NavigationContainer>
       </ApolloProvider>

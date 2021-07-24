@@ -1,5 +1,5 @@
 import React from 'react'
-import { ScrollView, StatusBar, StyleSheet, Text, View } from 'react-native'
+import { ScrollView, StatusBar, StyleSheet, Text } from 'react-native'
 import { Surface } from 'react-native-paper'
 
 import useData from '../data/useData'
@@ -8,7 +8,7 @@ import Doctrine from './Doctrine'
 
 export default function Home() {
 
-  const { loading, error, data } = useData('HOME');
+  const { loading, error, data } = useData('HOME')
 
   return (
 
@@ -18,7 +18,7 @@ export default function Home() {
         {loading && <Text>Loading...</Text>}
         {error && <Text>Error! ${error.message}</Text>}
 
-        {!loading && data.doctrines.map(doctrine => (
+        {!loading && !error && data.doctrines.map(doctrine => (
 
           <Doctrine
             key={doctrine._id}
