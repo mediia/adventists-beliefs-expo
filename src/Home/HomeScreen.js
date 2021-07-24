@@ -1,12 +1,12 @@
 import React from 'react'
 import { StatusBar, StyleSheet, Text, View } from 'react-native'
-import { Surface, Button } from 'react-native-paper'
+import { Surface } from 'react-native-paper'
 
 import useData from '../data/useData'
 
 import Doctrine from './Doctrine'
 
-export default function Home({navigation}) {
+export default function Home() {
 
   const { loading, error, data } = useData('HOME');
 
