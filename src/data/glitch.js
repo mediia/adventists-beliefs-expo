@@ -30,6 +30,7 @@ const BELIEF = gql`
         verses {
           _id
           reference
+          text
         }
       }
     }
