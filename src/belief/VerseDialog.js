@@ -5,7 +5,7 @@ export default function VerseDialog({ verse, hideVerse }) {
 
   return (
     <Dialog visible={!!verse} onDismiss={hideVerse}>
-      <Dialog.Title>{verse && verse.reference}</Dialog.Title>
+      <Dialog.Title>{verse && verse.title}</Dialog.Title>
       <Dialog.Content>
         <Paragraph>{verse && verse.text}</Paragraph>
       </Dialog.Content>

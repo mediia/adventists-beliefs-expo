@@ -15,7 +15,7 @@ export default function Declaration({ declaration, showVerse }) {
         <Paragraph>
           {declaration.text}
         </Paragraph>
-        <View
+        <Paragraph
           style={styles.versesContainer}
         >
           {declaration.verses && declaration.verses.map(verse => (
@@ -25,7 +25,7 @@ export default function Declaration({ declaration, showVerse }) {
               onPress={showVerse}
             />
           ))}
-        </View>
+        </Paragraph>
       </Card.Content>
     </Card>
   )

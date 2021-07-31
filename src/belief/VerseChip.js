@@ -10,7 +10,7 @@ export default function VerseChip({ verse, onPress }) {
       style={styles.verseChip}
       onPress={() => onPress(verse)}
     >
-      {verse.reference}
+      {verse.title}
     </Chip>
   )
 }
