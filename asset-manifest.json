@@ -1,7 +1,7 @@
 {
   "files": {
-    "app.js": "/adventists-beliefs-expo/static/js/app.9ba93599.chunk.js",
-    "app.js.map": "/adventists-beliefs-expo/static/js/app.9ba93599.chunk.js.map",
+    "app.js": "/adventists-beliefs-expo/static/js/app.51cb2fc6.chunk.js",
+    "app.js.map": "/adventists-beliefs-expo/static/js/app.51cb2fc6.chunk.js.map",
     "runtime~app.js": "/adventists-beliefs-expo/static/js/runtime~app.d414591d.js",
     "runtime~app.js.map": "/adventists-beliefs-expo/static/js/runtime~app.d414591d.js.map",
     "static/js/2.654bb63a.chunk.js": "/adventists-beliefs-expo/static/js/2.654bb63a.chunk.js",
@@ -18,6 +18,6 @@
   "entrypoints": [
     "static/js/runtime~app.d414591d.js",
     "static/js/2.654bb63a.chunk.js",
-    "static/js/app.9ba93599.chunk.js"
+    "static/js/app.51cb2fc6.chunk.js"
   ]
 }
