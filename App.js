@@ -32,7 +32,7 @@ export default function App() {
           >
             <Stack.Screen name="Home"
               component={HomeScreen}
-              options={{ title: 'Adventist Beliefs' }}
+              options={{ title: 'Creencias Adventistas' }}
             />
             <Stack.Screen name="Belief"
               component={BeliefScreen}
