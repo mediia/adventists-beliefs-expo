@@ -15,17 +15,19 @@ export default function Declaration({ declaration, showVerse }) {
         <Paragraph>
           {declaration.text}
         </Paragraph>
-        <Paragraph
-          style={styles.versesContainer}
-        >
-          {declaration.verses && declaration.verses.map(verse => (
-            <VerseChip
-              key={verse._id}
-              verse={verse}
-              onPress={showVerse}
-            />
-          ))}
-        </Paragraph>
+        {declaration.verses && !!declaration.verses.length &&
+          <Paragraph
+            style={styles.versesContainer}
+          >
+            {declaration.verses && declaration.verses.map(verse => (
+              <VerseChip
+                key={verse._id}
+                verse={verse}
+                onPress={showVerse}
+              />
+            ))}
+          </Paragraph>
+        }
       </Card.Content>
     </Card>
   )
@@ -39,5 +41,6 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     flexWrap: 'wrap',
+    marginTop: 8,
   },
 })

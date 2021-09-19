@@ -15,6 +15,9 @@ export default function BeliefScreen() {
         <View style={styles.declarationsContainer}>
           <DeclarationLoading/>
           <DeclarationLoading/>
+          <DeclarationLoading/>
+          <DeclarationLoading/>
+          <DeclarationLoading/>
         </View>
       </ScrollView>
     </RootSurface>
