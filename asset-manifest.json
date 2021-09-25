@@ -1,11 +1,11 @@
 {
   "files": {
-    "app.js": "/adventists-beliefs-expo/static/js/app.51cb2fc6.chunk.js",
-    "app.js.map": "/adventists-beliefs-expo/static/js/app.51cb2fc6.chunk.js.map",
+    "app.js": "/adventists-beliefs-expo/static/js/app.ee207d92.chunk.js",
+    "app.js.map": "/adventists-beliefs-expo/static/js/app.ee207d92.chunk.js.map",
     "runtime~app.js": "/adventists-beliefs-expo/static/js/runtime~app.d414591d.js",
     "runtime~app.js.map": "/adventists-beliefs-expo/static/js/runtime~app.d414591d.js.map",
-    "static/js/2.654bb63a.chunk.js": "/adventists-beliefs-expo/static/js/2.654bb63a.chunk.js",
-    "static/js/2.654bb63a.chunk.js.map": "/adventists-beliefs-expo/static/js/2.654bb63a.chunk.js.map",
+    "static/js/2.fcf8c7b4.chunk.js": "/adventists-beliefs-expo/static/js/2.fcf8c7b4.chunk.js",
+    "static/js/2.fcf8c7b4.chunk.js.map": "/adventists-beliefs-expo/static/js/2.fcf8c7b4.chunk.js.map",
     "fonts/MaterialCommunityIcons.ttf": "/adventists-beliefs-expo/./fonts/MaterialCommunityIcons.ttf",
     "favicon-16.png": "/adventists-beliefs-expo/favicon-16.png",
     "favicon-32.png": "/adventists-beliefs-expo/favicon-32.png",
@@ -13,11 +13,11 @@
     "index.html": "/adventists-beliefs-expo/index.html",
     "manifest.json": "/adventists-beliefs-expo/manifest.json",
     "serve.json": "/adventists-beliefs-expo/serve.json",
-    "static/js/2.654bb63a.chunk.js.LICENSE.txt": "/adventists-beliefs-expo/static/js/2.654bb63a.chunk.js.LICENSE.txt"
+    "static/js/2.fcf8c7b4.chunk.js.LICENSE.txt": "/adventists-beliefs-expo/static/js/2.fcf8c7b4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime~app.d414591d.js",
-    "static/js/2.654bb63a.chunk.js",
-    "static/js/app.51cb2fc6.chunk.js"
+    "static/js/2.fcf8c7b4.chunk.js",
+    "static/js/app.ee207d92.chunk.js"
   ]
 }
