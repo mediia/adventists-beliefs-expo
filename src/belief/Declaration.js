@@ -2,7 +2,7 @@ import React from 'react'
 import { StyleSheet, View } from 'react-native'
 import { Card, Paragraph } from 'react-native-paper'
 
-import VerseChip from './VerseChip'
+import VerseChipsRow from './VerseChipsRow'
 
 export default function Declaration({ declaration, showVerse }) {
 
@@ -15,19 +15,10 @@ export default function Declaration({ declaration, showVerse }) {
         <Paragraph>
           {declaration.text}
         </Paragraph>
-        {declaration.verses && !!declaration.verses.length &&
-          <Paragraph
-            style={styles.versesContainer}
-          >
-            {declaration.verses && declaration.verses.map(verse => (
-              <VerseChip
-                key={verse._id}
-                verse={verse}
-                onPress={showVerse}
-              />
-            ))}
-          </Paragraph>
-        }
+        <VerseChipsRow
+          verses={declaration.verses}
+          showVerse={showVerse}
+        />
       </Card.Content>
     </Card>
   )
@@ -36,11 +27,5 @@ export default function Declaration({ declaration, showVerse }) {
 const styles = StyleSheet.create({
   declaration: {
     marginBottom: 8,
-  },
-  versesContainer: {
-    flex: 1,
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    marginTop: 8,
   },
 })
