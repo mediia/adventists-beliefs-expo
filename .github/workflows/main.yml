@@ -5,7 +5,7 @@ on:
       - main
 jobs:
   publish:
-    name: Install, build and deploy yo gh-pages
+    name: Install, build and deploy to gh-pages
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
