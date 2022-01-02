@@ -4,8 +4,8 @@
     "app.js.map": "/adventists-beliefs-expo/static/js/app.23b8a75c.chunk.js.map",
     "runtime~app.js": "/adventists-beliefs-expo/static/js/runtime~app.d414591d.js",
     "runtime~app.js.map": "/adventists-beliefs-expo/static/js/runtime~app.d414591d.js.map",
-    "static/js/2.947c5b5f.chunk.js": "/adventists-beliefs-expo/static/js/2.947c5b5f.chunk.js",
-    "static/js/2.947c5b5f.chunk.js.map": "/adventists-beliefs-expo/static/js/2.947c5b5f.chunk.js.map",
+    "static/js/2.857c65e2.chunk.js": "/adventists-beliefs-expo/static/js/2.857c65e2.chunk.js",
+    "static/js/2.857c65e2.chunk.js.map": "/adventists-beliefs-expo/static/js/2.857c65e2.chunk.js.map",
     "fonts/MaterialCommunityIcons.ttf": "/adventists-beliefs-expo/./fonts/MaterialCommunityIcons.ttf",
     "favicon-16.png": "/adventists-beliefs-expo/favicon-16.png",
     "favicon-32.png": "/adventists-beliefs-expo/favicon-32.png",
@@ -13,11 +13,11 @@
     "index.html": "/adventists-beliefs-expo/index.html",
     "manifest.json": "/adventists-beliefs-expo/manifest.json",
     "serve.json": "/adventists-beliefs-expo/serve.json",
-    "static/js/2.947c5b5f.chunk.js.LICENSE.txt": "/adventists-beliefs-expo/static/js/2.947c5b5f.chunk.js.LICENSE.txt"
+    "static/js/2.857c65e2.chunk.js.LICENSE.txt": "/adventists-beliefs-expo/static/js/2.857c65e2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime~app.d414591d.js",
-    "static/js/2.947c5b5f.chunk.js",
+    "static/js/2.857c65e2.chunk.js",
     "static/js/app.23b8a75c.chunk.js"
   ]
 }
